@@ -1,0 +1,53 @@
+body {
+    margin: 0;
+    font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+    background: #f8fafc;
+    color: #0f172a;
+  }
+  
+  #root > div {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 32px 24px;
+  }
+  
+  h1, h2 {
+    letter-spacing: -0.02em;
+  }
+  
+  h3 {
+    margin: 0 0 4px;
+    font-size: 18px;
+  }
+  
+  p {
+    margin: 0 0 12px;
+    color: #64748b;
+    font-size: 14px;
+  }
+  
+  [data-testid="article-item"],
+  [data-testid="favorite-item"] {
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 10px;
+    padding: 16px;
+    margin-bottom: 12px;
+  }
+  
+  button {
+    padding: 8px 16px;
+    margin-right: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    font-family: inherit;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    background: #2563eb;
+    color: #ffffff;
+  }
+  
+  button:hover {
+    background: #1d4ed8;
+  }
