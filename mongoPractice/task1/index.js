@@ -9,12 +9,13 @@ const employeeSchema = new mongoose.Schema({
 // const count = await Employee.countDocuments(); use this to get
 // the existing count of employee
 // TODO: Add the pre("save") hook to generate an employee ID
-// only for new documents. 7001 + Count to generate ID
-// Employee IDs should follow EMP-7001, EMP-7002, EMP-7003, and so on.
+// only for new documents. 5001 + Count to generate ID
+// Employee IDs should follow EMP-5001, EMP-5002, EMP-5003, and so on.
 
 
 // TODO: Add the post("save") hook to display the employee
-// onboarding confirmation message using the saved document.
+// onboarding confirmation message using the saved document
+// (it must include both the employeeId and the department).
 
 
 const Employee = mongoose.model("Employee", employeeSchema);
@@ -24,8 +25,8 @@ async function run() {
   console.log("Database Connected");
 
   const employee = new Employee({
-    name: "Arjun",
-    department: "Finance",
+    name: "Kavya",
+    department: "Marketing",
   });
 
   await employee.save();

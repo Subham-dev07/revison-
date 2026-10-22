@@ -14,7 +14,7 @@ The following are already implemented — do not change them:
 Each article is an object of this shape:
 
 ```js
-{ id: 1, title: "React Hooks", author: "John" }
+{ id: 1, title: "JavaScript Closures", author: "Kabir" }
 ```
 
 ## Functional Requirements
@@ -58,25 +58,25 @@ The store must manage both slices:
 Display the number of saved articles in exactly this format:
 
 ```
-Favorites (2 Articles)
+Saved Articles: 2
 ```
 
-- The word `Articles` does not change with the count - `Favorites (1 Articles)` and `Favorites (0 Articles)` are correct
+- The text stays the same for every count - `Saved Articles: 1` and `Saved Articles: 0` are correct
 - The element must carry `data-testid="favorites-count"`
 
 ### 4. Article Display
 
 - Render every article in the favorites state
-- Each one shows its title, and its author prefixed with `Author:`
+- Each one shows its title, and its author prefixed with `Written by:`
 
 For example:
 
 ```
-React Hooks
-Author: John
+JavaScript Closures
+Written by: Kabir
 
-Redux Toolkit
-Author: Sarah
+Node.js Streams
+Written by: Priya
 ```
 
 - The container holding the articles must carry `data-testid="favorites-list"`
@@ -92,9 +92,9 @@ Author: Sarah
 
 | Action | Count | Articles shown |
 | --- | --- | --- |
-| Initial render | Favorites (0 Articles) | none |
-| Add React Hooks | Favorites (1 Articles) | React Hooks |
-| Add React Hooks again | Favorites (1 Articles) | React Hooks |
-| Add Redux Toolkit | Favorites (2 Articles) | React Hooks, Redux Toolkit |
-| Remove React Hooks | Favorites (1 Articles) | Redux Toolkit |
-| Click Clear Favorites | Favorites (0 Articles) | none |
+| Initial render | Saved Articles: 0 | none |
+| Add Node.js Streams | Saved Articles: 1 | Node.js Streams |
+| Add Node.js Streams again | Saved Articles: 1 | Node.js Streams |
+| Add TypeScript Generics | Saved Articles: 2 | Node.js Streams, TypeScript Generics |
+| Remove Node.js Streams | Saved Articles: 1 | TypeScript Generics |
+| Click Clear Favorites | Saved Articles: 0 | none |

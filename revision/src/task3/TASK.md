@@ -2,7 +2,7 @@
 
 You are building a **Temperature Converter** using React.
 
-The converter displays a temperature value along with its unit. Users can raise or lower the temperature by one degree, and convert the displayed value between Celsius and Fahrenheit.
+The converter displays a temperature value along with its unit. Users can raise or lower the temperature by two degrees, and convert the displayed value between Celsius and Fahrenheit.
 
 Complete the given template code by implementing the converter.
 
@@ -10,7 +10,7 @@ Complete the given template code by implementing the converter.
 
 ### 1. State Variables
 
-- `temperature` - a number storing the current temperature value, with an initial value of `25`
+- `temperature` - a number storing the current temperature value, with an initial value of `30`
 - `unit` - a string storing the current unit, with an initial value of `"C"`
 
 ### 2. Conversion Function
@@ -36,8 +36,8 @@ Implement a function named `convertTemperature()`.
 
 | Button label                                   | Action                       | Attribute                    |
 | ---------------------------------------------- | ---------------------------- | ---------------------------- |
-| Increase                                       | Increases temperature by 1   | `data-testid="btn-increase"` |
-| Decrease                                       | Decreases temperature by 1   | `data-testid="btn-decrease"` |
+| Increase                                       | Increases temperature by 2   | `data-testid="btn-increase"` |
+| Decrease                                       | Decreases temperature by 2   | `data-testid="btn-decrease"` |
 | Convert to Fahrenheit / Convert to Celsius     | Calls `convertTemperature()` | `data-testid="btn-convert"`  |
 
 ### 5. Convert Button Label
@@ -49,6 +49,6 @@ Implement a function named `convertTemperature()`.
 
 ## Conversion Rules
 
-- The Increase and Decrease buttons add or subtract 1 from the value as currently displayed — they do not convert
+- The Increase and Decrease buttons add or subtract 2 from the value as currently displayed — they do not convert
 - The displayed value and unit symbol must both update immediately after a conversion
-- The value is rounded for display only; the <!-- TODO: rest of this rule was cut off in the copy -->
+- The value is rounded for display only; the `temperature` state keeps the full unrounded value

@@ -24,11 +24,11 @@ Create a `pre("save")` hook on the employee schema.
 
 - The hook must run **before** an employee document is saved
 - Generate an `employeeId` and assign it to the document being saved
-- The employee ID must follow this format: `EMP-7001`
-- The numeric part starts at **7001** for the first employee and increases by 1 for each employee saved after that:
-  - First employee → `EMP-7001`
-  - Second employee → `EMP-7002`
-  - Third employee → `EMP-7003`
+- The employee ID must follow this format: `EMP-5001`
+- The numeric part starts at **5001** for the first employee and increases by 1 for each employee saved after that:
+  - First employee → `EMP-5001`
+  - Second employee → `EMP-5002`
+  - Third employee → `EMP-5003`
 - The number must be derived from how many employee documents already exist in the collection — it must **not** be a fixed value
 - The hook must only generate an ID for **new** documents
 
@@ -37,10 +37,10 @@ Create a `pre("save")` hook on the employee schema.
 Create a `post("save")` hook on the employee schema.
 
 - The hook must run **after** an employee document has been saved
-- Print the following message to the console, using the `employeeId` from the saved document:
+- Print the following message to the console, using the `employeeId` and `department` from the saved document:
 
 ```
-Employee EMP-7001 has been onboarded successfully.
+Employee EMP-5001 has joined the Marketing team.
 ```
 
 ### 4. Save the Employee
@@ -49,23 +49,23 @@ The provided code creates and saves this employee:
 
 | Name  | Department |
 | ----- | ---------- |
-| Arjun | Finance    |
+| Kavya | Marketing  |
 
 After the hooks are implemented, the saved document must contain:
 
-- name: `Arjun`
-- department: `Finance`
-- employeeId: `EMP-7001`
+- name: `Kavya`
+- department: `Marketing`
+- employeeId: `EMP-5001`
 
 ## Expected Output
 
 ```
 Database Connected
-Employee EMP-7001 has been onboarded successfully.
+Employee EMP-5001 has joined the Marketing team.
 Stored Employee
-Arjun
-Finance
-EMP-7001
+Kavya
+Marketing
+EMP-5001
 ```
 
 ## Run

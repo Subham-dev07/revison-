@@ -4,9 +4,9 @@ const articlesSlice = createSlice({
   name: "articles",
   initialState: {
     items: [
-      { id: 1, title: "React Hooks", author: "John" },
-      { id: 2, title: "Redux Toolkit", author: "Sarah" },
-      { id: 3, title: "React Router", author: "Meera" },
+      { id: 1, title: "JavaScript Closures", author: "Kabir" },
+      { id: 2, title: "Node.js Streams", author: "Priya" },
+      { id: 3, title: "TypeScript Generics", author: "Rohan" },
     ],
   },
   reducers: {},

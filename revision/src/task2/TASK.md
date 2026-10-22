@@ -42,25 +42,25 @@ These controls must have the following attributes:
 
 Use a `useEffect` hook to monitor `count`.
 
-- When `count` reaches **3 or more**, change the `<h1>` font size to `"40px"`
-- When `count` is **below 3**, change the font size back to `"24px"`
+- When `count` reaches **4 or more**, change the `<h1>` font size to `"36px"`
+- When `count` is **below 4**, change the font size back to `"18px"`
 - Add `count` as the dependency of the `useEffect`
 
 ### Font Size Rules
 
 - The font size must be applied to the `<h1>` through the inline `style` attribute
-- The value must be written exactly as `"40px"` or `"24px"` — other units are not accepted
+- The value must be written exactly as `"36px"` or `"18px"` — other units are not accepted
 
 ## Expected Behaviour
 
 **On initial render:**
 - Count: 0
-- Font size: 24px
+- Font size: 18px
 
-**After clicking Increase 3 times:**
-- Count: 3
-- Font size: 40px
+**After clicking Increase 4 times:**
+- Count: 4
+- Font size: 36px
 
 **After clicking Reset:**
 - Count: 0
-- Font size: 24px
+- Font size: 18px

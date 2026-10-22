@@ -5,11 +5,11 @@ const testMembers = [
   {
     label: "Valid member",
     data: {
-      memberName: "Rahul",
-      age: 22,
-      plan: "Monthly",
-      fee: 1499,
-      phone: "9876543210",
+      memberName: "Vikram",
+      age: 25,
+      plan: "Gold",
+      fee: 2499,
+      phone: "8123456789",
     },
   },
   {
@@ -19,21 +19,21 @@ const testMembers = [
   {
     label: "Invalid values",
     data: {
-      memberName: "Al",
-      age: 14,
-      plan: "Weekly",
-      fee: 500,
-      phone: "98765",
+      memberName: "Raj",
+      age: 17,
+      plan: "Diamond",
+      fee: 1500,
+      phone: "81234",
     },
   },
   {
     label: "Phone with country code",
     data: {
-      memberName: "Sneha",
-      age: 30,
-      plan: "Yearly",
-      fee: 4999,
-      phone: "+919876543210",
+      memberName: "Ananya",
+      age: 28,
+      plan: "Platinum",
+      fee: 5999,
+      phone: "+918123456789",
     },
   },
 ];

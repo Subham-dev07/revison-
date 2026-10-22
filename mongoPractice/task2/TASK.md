@@ -12,32 +12,32 @@ Complete the `MemberSchema` with the following fields. **Each error message must
 
 - Type: `String`
 - Required, with the message `Member name is required`
-- Minimum 3 characters, with the message `Member name must be at least 3 characters`
+- Minimum 4 characters, with the message `Member name must be at least 4 characters`
 
 ### 2. age
 
 - Type: `Number`
 - Required, with the message `Age is required`
-- Minimum value 16, with the message `Age must be at least 16`
+- Minimum value 18, with the message `Age must be at least 18`
 
 ### 3. plan
 
 - Type: `String`
-- Allowed values: `Monthly`, `Quarterly`, `Yearly`
-- Any other value gives the message `Plan must be Monthly, Quarterly, or Yearly`
+- Allowed values: `Silver`, `Gold`, `Platinum`
+- Any other value gives the message `Plan must be Silver, Gold, or Platinum`
 
 ### 4. fee
 
 - Type: `Number`
 - Required, with the message `Fee is required`
-- Minimum value 999, with the message `Fee must be at least 999`
+- Minimum value 1999, with the message `Fee must be at least 1999`
 
-### 5. hasPersonalTrainer
+### 5. hasLockerAccess
 
 - Type: `Boolean`
 - Default value: `false`
 
-### 6. startDate
+### 6. joinDate
 
 - Type: `Date`
 - Default value: the current date
@@ -55,15 +55,15 @@ The phone value must be exactly **10 characters** long.
 **Valid Examples**
 
 ```
-9876543210
-7012345678
-5432109876
+8123456789
+9012345678
+6789012345
 ```
 
 **Invalid Examples**
 
 ```
-98765          - fewer than 10
-98765432101    - more than 10
-+919876543210  - more than 10
+81234          - fewer than 10
+81234567890    - more than 10
++918123456789  - more than 10
 ```

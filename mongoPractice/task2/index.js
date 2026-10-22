@@ -10,9 +10,9 @@ const MemberSchema = new mongoose.Schema({
 
   // TODO: Define the fee field as described in the task
 
-  // TODO: Define the hasPersonalTrainer field as described in the task
+  // TODO: Define the hasLockerAccess field as described in the task
 
-  // TODO: Define the startDate field as described in the task
+  // TODO: Define the joinDate field as described in the task
 
   // TODO: Define the phone field as described in the task
 

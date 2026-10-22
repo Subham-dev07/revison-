@@ -42,25 +42,25 @@ These controls must have the following attributes:
 
 Use a `useEffect` hook to monitor `count`.
 
-- When `count` reaches **5 or more**, change the `<h1>` text colour to `"red"`
-- When `count` is **below 5**, change the text colour back to `"black"`
+- When `count` reaches **7 or more**, change the `<h1>` text colour to `"green"`
+- When `count` is **below 7**, change the text colour back to `"blue"`
 - Add `count` as the dependency of the `useEffect`
 
 ### Colour Rules
 
 - The colour must be applied to the `<h1>` through the inline `style` attribute
-- The colour value must be written exactly as `"red"` or `"black"`
+- The colour value must be written exactly as `"green"` or `"blue"`
 
 ## Expected Behaviour
 
 **On initial render:**
 - Count: 0
-- Text colour: black
+- Text colour: blue
 
-**After clicking Increase 5 times:**
-- Count: 5
-- Text colour: red
+**After clicking Increase 7 times:**
+- Count: 7
+- Text colour: green
 
 **After clicking Reset:**
 - Count: 0
-- Text colour: black
+- Text colour: blue

@@ -2,7 +2,7 @@
 
 You are building a **Cricket Scoreboard** using React.
 
-The scoreboard tracks the runs scored and wickets fallen in an innings. Users can add runs in increments of 1, 4 or 6, record a wicket, and reset the scoreboard. Once ten wickets have fallen, the innings ends and no further scoring is allowed.
+The scoreboard tracks the runs scored and wickets fallen in an innings. Users can add runs in increments of 2, 4 or 6, record a wicket, and reset the scoreboard. Once ten wickets have fallen, the innings ends and no further scoring is allowed.
 
 Complete the given template code by implementing the scoreboard.
 
@@ -16,7 +16,7 @@ Complete the given template code by implementing the scoreboard.
 ### 2. Score Display
 
 - Display the score inside an `<h2>` element in the format `runs/wickets`
-  - Example: `24/3`
+  - Example: `36/4`
 - The `<h2>` must have the attribute:
   `data-testid="score-display"`
 
@@ -24,7 +24,7 @@ Complete the given template code by implementing the scoreboard.
 
 | Button | Action                               | Attribute                  |
 | ------ | ------------------------------------ | -------------------------- |
-| Add 1  | Increases runs by 1                  | `data-testid="btn-add-1"`  |
+| Add 2  | Increases runs by 2                  | `data-testid="btn-add-2"`  |
 | Add 4  | Increases runs by 4                  | `data-testid="btn-add-4"`  |
 | Add 6  | Increases runs by 6                  | `data-testid="btn-add-6"`  |
 | Wicket | Increases wickets by 1               | `data-testid="btn-wicket"` |
@@ -36,7 +36,7 @@ Complete the given template code by implementing the scoreboard.
 - The `<p>` must have the attribute:
   `data-testid="all-out-message"`
 - The message must **not** be rendered when `wickets` is less than 10
-- When all out, the **Add 1**, **Add 4**, **Add 6** and **Wicket** buttons must be disabled
+- When all out, the **Add 2**, **Add 4**, **Add 6** and **Wicket** buttons must be disabled
 - The **Reset** button must remain enabled at all times
 
 ## Example Flow
@@ -44,8 +44,8 @@ Complete the given template code by implementing the scoreboard.
 | Step                      | Display                        |
 | ------------------------- | ------------------------------ |
 | Initial render            | `0/0`                          |
-| Click Add 4               | `4/0`                          |
-| Click Add 6               | `10/0`                         |
-| Click Wicket              | `10/1`                         |
-| Click Wicket 9 more times | `10/10` with All Out! shown    |
+| Click Add 6               | `6/0`                          |
+| Click Add 2               | `8/0`                          |
+| Click Wicket              | `8/1`                          |
+| Click Wicket 9 more times | `8/10` with All Out! shown     |
 | Click Reset               | `0/0` with the message removed |

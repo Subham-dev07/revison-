@@ -16,10 +16,10 @@ function App() {
       {/* TODO: Render the All Out! message when wickets reach 10 */}
 
       <button
-        data-testid="btn-add-1"
+        data-testid="btn-add-2"
         onClick={() => {}}
       >
-        Add 1
+        Add 2
       </button>
 
       <button
